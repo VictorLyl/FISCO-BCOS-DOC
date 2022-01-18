@@ -344,7 +344,7 @@ Java SDK提供了将签名结果`SignatureResult`转换为字符串，以及从�
     }
 
     // 从签名字符串中构造国密签名对象
-    public SM2SignatureResult covertStringToECDSASignatureResult(CryptoKeyPair smKeyPair, String signatureString)
+    public SM2SignatureResult covertStringToSM2SignatureResult(CryptoKeyPair smKeyPair, String signatureString)
     {
         return new SM2SignatureResult(smKeyPair.getHexPublicKey(), signatureString);
     }
